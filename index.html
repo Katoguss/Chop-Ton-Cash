@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penalty Game - Gagnez Gros !</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .bounce { animation: bounce 2s infinite; }
+        .pulse { animation: pulse 2s infinite; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl shadow-2xl p-8 text-center max-w-md w-full">
+        
+        <!-- Icône Football -->
+        <div class="text-6xl mb-6 bounce">
+            ⚽
+        </div>
+        
+        <!-- Titre Principal -->
+        <h1 class="text-3xl font-black text-gray-800 mb-4">
+            JEU DU PENALTY
+        </h1>
+        
+        <h2 class="text-xl font-bold text-green-600 mb-6">
+            GAGNE GROS ! 💰
+        </h2>
+        
+        <!-- Bonus -->
+        <div class="bg-yellow-400 text-black font-bold text-lg p-4 rounded-xl mb-6 pulse">
+            🎁 10€ OFFERTS À L'INSCRIPTION
+        </div>
+        
+        <!-- Instructions courtes -->
+        <p class="text-gray-600 text-sm mb-2">
+           <strong>1️⃣ Appuie sur les 3 point en haut à droite</strong>
+        </p>
+        <p class="text-gray-600 text-sm mb-6">
+            <strong>2️⃣ Appuie sur "Ouvrir dans le navigateur"</strong>
+        </p>
+        <p class="text-gray-600 text-sm mb-6">
+            <strong>👇 Puis contacte-moi</strong>
+        </p>
+        
+        <!-- Bouton Contact -->
+        <a href="https://t.me/contact_winningz" 
+           class="bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200 inline-flex items-center gap-3">
+            <i class="fab fa-telegram-plane text-2xl"></i>
+            CONTACT-MOI !
+        </a>
+    </div>
+</body>
+</html>
